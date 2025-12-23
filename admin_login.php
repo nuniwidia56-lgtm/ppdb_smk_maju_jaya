@@ -21,7 +21,7 @@ if (isset($_POST['login'])) {
         header("Location: admin.php");
         exit();
     } else {
-        $error = "❌ Login gagal! Username atau password salah.";
+        $error = "Login gagal! Username atau password salah.";
     }
 }
 ?>

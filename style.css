@@ -1,0 +1,347 @@
+/* === HERO IMAGE DI HEADER === */
+.site-header {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* container gambar hero */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 350px; /* tinggi banner bisa disesuaikan */
+  overflow: hidden;
+}
+
+/* gambar sekolah full lebar */
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* biar gambar penuh tanpa ketarik aneh */
+  filter: brightness(0.6); /* agak gelap biar teks putihnya kelihatan */
+}
+.site-header {
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 400px; /* bisa disesuaikan tinggi headernya */
+}
+
+/* Gambar sekolah */
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+/* Lapisan transparan biru */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 97, 164, 0.6);
+  z-index: 2;
+}
+
+/* Teks di tengah */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+/* Judul utama */
+.hero-text h1 {
+  font-size: 7em; /* <=== ubah di sini kalau mau lebih besar */
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4); /* biar makin tegas di atas gambar */
+}
+
+/* Subjudul */
+.hero-text p {
+  font-size: 1.5em;
+  font-weight: 500;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* overlay teks di tengah */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 97, 164, 0.6);
+
+}
+
+.overlay h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 1.2em;
+}
+.site-header {
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+
+/* Gambar di bawah */
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1; /* lapisan dasar */
+}
+
+/* Overlay transparan di tengah */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 97, 164, 0.6);
+  z-index: 2; /* di atas gambar */
+}
+
+/* Teks di paling depan */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3; /* di atas overlay */
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2em;
+}
+
+
+/* === WARNA UTAMA (THEME VARIABLES) === */
+:root {
+  --primary: #0b61a4;
+  --accent:  #0d87d3;
+  --bg:      #f4f8fb;
+  --card:    #ffffff;
+}
+
+/* === RESET DASAR === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: #222;
+  line-height: 1.6;
+}
+
+/* === HEADER & FOOTER === */
+header.site-header {
+  background: var(--primary);
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.site-header h1 {
+  font-size: 1.8em;
+}
+
+.site-footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 30px;
+}
+
+/* === NAVIGASI === */
+.main-nav {
+  background: var(--accent);
+  text-align: center;
+  padding: 10px 0;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+/* === KONTEN & KARTU === */
+
+/* === WARNA UTAMA === */
+:root {
+  --primary: #0b61a4;
+  --accent: #007bff;
+  --bg-light: #f4f8fb;
+  --text-dark: #222;
+}
+
+/* === BODY DAN TATA LETAK === */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* === HEADER === */
+header {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 1.8em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #010e0e;
+}
+
+/* === KONTEN UTAMA === */
+main {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+/* === KOTAK CARD === */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 40px;
+}
+
+/* === BAGIAN BERITA === */
+.berita {
+  margin-top: 30px;
+}
+
+.berita h2 {
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.8em;
+  letter-spacing: 1px;
+}
+
+/* Tata letak berita dalam grid */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Setiap artikel berita */
+.news-item {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: all 0.3s ease;
+  border-top: 5px solid var(--accent);
+  animation: fadeInUp 0.8s ease both;
+}
+
+.news-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.news-item h3 {
+  color: var(--primary);
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.news-item p {
+  color: #444;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+/* Animasi lembut muncul dari bawah */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === FOOTER === */
+footer {
+  text-align: center;
+  background: var(--primary);
+  color: white;
+  padding: 15px 10px;
+  font-size: 0.9em;
+  margin-top: 40px;
+}

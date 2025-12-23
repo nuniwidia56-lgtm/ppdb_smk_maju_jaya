@@ -1,0 +1,153 @@
+/* ====== STYLE UNTUK HALAMAN HASIL PENDAFTARAN ====== */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fc;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2d89ef;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 30px;
+  color: #003366;
+  font-weight: 600;
+}
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+th {
+  background-color: #2d89ef;
+  color: white;
+}
+
+/* === WARNA UTAMA (THEME VARIABLES) === */
+:root {
+  --primary: #0b61a4;
+  --accent:  #0d87d3;
+  --bg:      #f4f8fb;
+  --card:    #ffffff;
+}
+
+/* === RESET DASAR === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: #222;
+  line-height: 1.6;
+}
+/* === NAVIGASI === */
+.main-nav {
+  background: var(--accent);
+  text-align: center;
+  padding: 10px 0;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Container tabel agar bisa discroll horizontal */
+.table-container {
+  width: 95%;
+  margin: 20px auto;
+  overflow-x: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+/* Tabel utama */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1200px; /* Biar tabel lebar dan tidak terpotong */
+}
+
+/* Header kolom */
+th {
+  background-color: #0066cc;
+  color: #fff;
+  padding: 12px;
+  text-align: left;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+/* Isi tabel */
+td {
+  border: 1px solid #ddd;
+  padding: 10px 12px;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Baris genap diberi warna abu muda */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Efek hover pada baris */
+tr:hover {
+  background-color: #e6f7ff;
+  transition: 0.3s;
+}
+
+/* Agar tetap rapi di layar kecil */
+@media screen and (max-width: 768px) {
+  table {
+    font-size: 13px;
+    min-width: 800px;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+}
+
+/* === HEADER & FOOTER === */
+header.site-header {
+  background: var(--primary);
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.site-header h1 {
+  font-size: 1.8em;
+}
+
+.site-footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 30px;
+}
